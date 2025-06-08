@@ -1,0 +1,156 @@
+/* VUS-Inspired Footer Styles */
+
+.vus-footer {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 60px 48px 20px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo-text {
+    font-size: 24px;
+    font-weight: 800;
+    color: #E30613;
+    text-decoration: none;
+}
+
+.footer-desc {
+    font-size: 16px;
+    color: #CCCCCC;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.footer-links li a {
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #E30613;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #CCCCCC;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #E30613;
+    transform: scale(1.1);
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .vus-footer {
+        padding: 40px 24px 20px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-desc,
+    .footer-links li,
+    .footer-contact li {
+        font-size: 14px;
+    }
+
+    .footer-logo-text {
+        font-size: 20px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .vus-footer {
+        padding: 30px 16px 20px;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+    }
+}
+
+/* Dark Mode Support */
+.dark-mode .vus-footer {
+    background-color: #111111;
+}
+
+.dark-mode .footer-logo-text,
+.dark-mode .footer-links li a:hover,
+.dark-mode .social-icon:hover {
+    color: #E30613;
+}
+
+.dark-mode .footer-desc,
+.dark-mode .footer-links li,
+.dark-mode .footer-contact li,
+.dark-mode .footer-copyright p {
+    color: #BBBBBB;
+}

@@ -1,0 +1,33 @@
+.carousel-container {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  width: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Hiệu ứng nhẹ khi hover */
+.carousel-item:hover .carousel-image {
+  transform: scale(1.03);
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
